@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="../Project/style.css" />
+    <link rel="stylesheet" href="../Project/Media.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+        $(function () {
+            var div = $("div:first");
+            //var dm = $(".grid1");
+            $(".menu-icon").click(function () {
+                $(".grid1").toggle();
+                div.toggleClass("conteiner");
+                
+            })
+        });
+    </script>
+
+</head>
+<body>
+    <div >
+        <header>
+            <nav>
+                <div class="grid">
+                    <div class="menu-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink" height="30px" version="1.1" viewBox="0 0 25 25" width="30px"><title /><desc /><defs /><g fill="none" fill-rule="evenodd" id="TabBar-Icons" stroke="none" stroke-width="1"><g id="Hamburger"><path d="M0,2 L25,2 L25,6 L0,6 L0,2 Z M0,10 L25,10 L25,14 L0,14 L0,10 Z M0,18 L25,18 L25,22 L0,22 L0,18 Z" /></g></g></svg>
+                    </div>
+                    <div id="text">Logo big image</div>
+                    <div class="grid1">
+                        <div class="m" id="m1"><a>Menu1</a></div>
+                        <div class="m" id="m2"><a>Menu2</a></div>
+                        <div class="m" id="m3"><a>Menu3</a></div>
+                        <div class="m" id="m4">&nbsp;</div>
+                    </div>
+                    
+                    <div>&nbsp;</div>
+                    <div>Help button</div>
+                </div>
+            </nav>
+        </header><!--/header-->
+        <content>
+            <section class="grid-c">
+                <div>Block1</div>
+                <div class="grid-com">
+                    <h3>Block2</h3>
+                    <div>Comments</div>
+                    <div>Comments</div>
+                    <div>Comments</div>
+                    <div>Comments</div>
+                </div>
+                <div>Block3</div>
+            </section>
+        </content>
+    </div>
+    
+</body>
+</html>
